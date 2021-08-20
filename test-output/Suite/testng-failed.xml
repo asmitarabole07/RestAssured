@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.qa.ExtenttRportListner.ExtentListeners"/>
+  </listeners>
+  <test thread-count="5" name="Rest Assured Tests(failed)">
+    <classes>
+      <class name="com.qa.Employee.EmployeePUT">
+        <methods>
+          <include name="creatData"/>
+          <include name="contentTypeValidation"/>
+          <include name="StatusCodeValidation"/>
+        </methods>
+      </class> <!-- com.qa.Employee.EmployeePUT -->
+      <class name="com.qa.Employee.GetEmployee">
+        <methods>
+          <include name="setUp"/>
+          <include name="StatusCodeValidation"/>
+        </methods>
+      </class> <!-- com.qa.Employee.GetEmployee -->
+      <class name="com.qa.Employee.EmployeePOST">
+        <methods>
+          <include name="StatusCodeValidation"/>
+          <include name="contentTypeValidation"/>
+          <include name="creatData"/>
+        </methods>
+      </class> <!-- com.qa.Employee.EmployeePOST -->
+      <class name="com.qa.Employee.GetEmployee_1">
+        <methods>
+          <include name="setUp"/>
+          <include name="StatusCodeValidation"/>
+        </methods>
+      </class> <!-- com.qa.Employee.GetEmployee_1 -->
+    </classes>
+  </test> <!-- Rest Assured Tests(failed) -->
+</suite> <!-- Failed suite [Suite] -->
